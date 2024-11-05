@@ -1,5 +1,6 @@
 from openai import OpenAI
 from demo_util import color
+import json
 
 
 client = OpenAI()
@@ -25,3 +26,8 @@ while True:
 
     # add message to history
     messages.append(message)
+
+    # save history to file
+    with open("history.json", "w") as f:
+        json.dump(messages, f)
+
