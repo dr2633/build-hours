@@ -31,7 +31,7 @@ tools = [
                     "item_id": {"type": "string"},
                     "reason": {"type": "string"},
                 },
-                "required": ["item_id"],
+                "required": ["item_id", "reason"],
             },
         },
     },
